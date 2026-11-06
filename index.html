@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HistoryOsis: Clinical intake, examination chips and differentials, offline</title>
+<meta name="description" content="HistoryOsis Technologies builds clinical records and examination training for medical education. The HistoryOsis app puts every history question on screen as a tap, flags dangerous vitals and drug allergies, and works offline. Built for medical schools first, then clinics and teaching hospitals.">
+<link rel="canonical" href="https://historyosis.tech/">
+<meta name="theme-color" content="#F6FBF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1513" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="HistoryOsis Technologies">
+<meta property="og:description" content="HistoryOsis Technologies builds clinical records and examination training for medical education. The HistoryOsis app puts every history question on screen as a tap, flags dangerous vitals and drug allergies, and works offline. Built for medical schools first, then clinics and teaching hospitals.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://historyosis.tech/">
+<meta property="og:image" content="https://historyosis.tech/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/logo-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('ho-site-theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="HistoryOsis Technologies, home">
+      <img src="assets/img/logo-192.png" width="36" height="36" alt="">
+      <b>HistoryOsis</b><span>Technologies</span>
+    </a>
+    <nav class="nav" aria-label="Main"><a href="app-tour.html">App tour</a><a href="features.html">Features</a><a href="differentials.html">Differentials</a><a href="who-its-for.html">Who it's for</a><a href="privacy-safety.html">Privacy and safety</a><a href="roadmap.html">Roadmap</a><a href="get-involved.html">Get involved</a><a href="faq.html">FAQ</a><a href="about.html">About</a></nav>
+    <button class="theme-btn" type="button" id="theme-btn" aria-label="Theme: Auto. Switch to Light."><span>Auto</span></button>
+    <details class="menu">
+      <summary aria-label="Menu"><span class="menu-label">Menu</span><svg class="menu-ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+      <nav aria-label="Menu"><a href="index.html" aria-current="page">Home</a><a href="app-tour.html">App tour</a><a href="features.html">Features</a><a href="differentials.html">Differentials</a><a href="who-its-for.html">Who it's for</a><a href="privacy-safety.html">Privacy and safety</a><a href="whats-new.html">What's new</a><a href="roadmap.html">Roadmap</a><a href="get-involved.html">Get involved</a><a href="faq.html">FAQ</a><a href="about.html">About</a></nav>
+    </details>
+    <a class="btn btn-primary btn-sm" href="https://historyosis.netlify.app/" target="_blank" rel="noopener noreferrer">Launch app</a>
+  </div>
+</header>
+<div id="theme-live" class="sr" role="status" aria-live="polite"></div>
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><i aria-hidden="true"></i>Open beta · v3.37.1 · works offline</span>
+      <h1>Take a history. Examine. <span>Reason it through.</span> Miss nothing.</h1>
+      <p class="lede">HistoryOsis is a structured clinical intake app. Tap through the questions a good history needs, log examination signs as chips across 23 body systems, and see a ranked differential that always keeps the dangerous causes in view. It runs in your browser, works offline after the first load, and keeps records on your own device.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="https://historyosis.netlify.app/" target="_blank" rel="noopener noreferrer">Launch Live App — No Sign-up Required</a>
+        <a class="btn btn-ghost" href="app-tour.html">Take the app tour</a>
+      </div>
+      <p class="cta-note">Try it right now in your browser, before you install or update anything.</p>
+      <p class="assure">No account. No internet needed after the first load. Records stay on the device they were typed on. Open beta, in active testing. Advisory tool: clinical judgement and local protocols always apply.</p>
+    </div>
+
+    <div class="composer" id="composer" aria-labelledby="comp-title">
+      <h2 id="comp-title">Try it: a patient with chest pain</h2>
+      <p class="hint">These are the app's real questions. Tap an answer. For symptoms, tap once for present and twice for absent.</p>
+
+      <div class="q"><div class="q-label">Onset</div>
+        <div class="chips" data-q="onset" data-type="single"><button class="chip" type="button" aria-pressed="false">sudden</button><button class="chip" type="button" aria-pressed="false">gradual</button></div></div>
+      <div class="q"><div class="q-label">Character <small>pick all that apply</small></div>
+        <div class="chips" data-q="char" data-type="multi"><button class="chip" type="button" aria-pressed="false">crushing</button><button class="chip" type="button" aria-pressed="false">tight / pressure</button><button class="chip" type="button" aria-pressed="false">sharp</button><button class="chip" type="button" aria-pressed="false">burning</button><button class="chip" type="button" aria-pressed="false">tearing</button><button class="chip" type="button" aria-pressed="false">pleuritic</button></div></div>
+      <div class="q"><div class="q-label">Radiation <small>pick all that apply</small></div>
+        <div class="chips" data-q="rad" data-type="multi"><button class="chip" type="button" aria-pressed="false">left arm</button><button class="chip" type="button" aria-pressed="false">right arm</button><button class="chip" type="button" aria-pressed="false">jaw</button><button class="chip" type="button" aria-pressed="false">neck</button><button class="chip" type="button" aria-pressed="false">back</button><button class="chip" type="button" aria-pressed="false">epigastrium</button></div></div>
+      <div class="q"><div class="q-label">Severity <small>0 to 10</small></div>
+        <div class="scale" data-q="sev" data-type="scale" role="group" aria-label="Severity from 0 to 10"></div></div>
+      <div class="q"><div class="q-label">Associated <small>present or absent</small></div>
+        <div class="chips" data-q="assoc" data-type="ternary"><button class="chip" type="button" data-state="" aria-label="sweating, not asked">sweating</button><button class="chip" type="button" data-state="" aria-label="nausea, not asked">nausea</button><button class="chip" type="button" data-state="" aria-label="vomiting, not asked">vomiting</button><button class="chip" type="button" data-state="" aria-label="breathlessness, not asked">breathlessness</button><button class="chip" type="button" data-state="" aria-label="palpitations, not asked">palpitations</button><button class="chip" type="button" data-state="" aria-label="syncope, not asked">syncope</button></div></div>
+
+      <div class="out">
+        <div class="out-label">Written into the record</div>
+        <p id="hopi-out" aria-live="polite">Chest Pain: sudden onset, crushing, tight / pressure, radiating to left arm, jaw, severity 8/10. Associated: sweating, nausea, breathlessness. No syncope.</p>
+      </div>
+      <p class="src">The app has 76 complaints like this one. Screens on this page show fictional patients.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec-tight sec-band inside" aria-labelledby="inside-h">
+  <div class="wrap">
+    <h2 id="inside-h">Clinical content already built in</h2>
+    <dl class="facts">
+      <div><dt>presenting complaints, each with tap-to-answer questions</dt><dd>76</dd></div>
+      <div><dt>examination systems with tap chips and red-flag alerts</dt><dd>23</dd></div>
+      <div><dt>complaints with a rule-based differential and Must-not-miss list</dt><dd>76</dd></div>
+      <div><dt>lab analytes with reference-range flags</dt><dd>~40</dd></div>
+      <div><dt>investigations in 11 categories</dt><dd>138</dd></div>
+      <div><dt>colour presets, plus any custom colour</dt><dd>8</dd></div>
+    </dl>
+    <div class="ticker" aria-hidden="true"><div><span>Chest pain</span><span>Red flags</span><span>NEWS2</span><span>Shock Index</span><span>Must not miss</span><span>Drug-allergy checks</span><span>Examination chips</span><span>Lab range flags</span><span>Discharge summary</span><span>Dark mode</span><span>High contrast</span><span>Works offline</span><span>Student mode</span><span>Clinician mode</span><span>8 colour presets</span><span>Print A4</span><span>Chest pain</span><span>Red flags</span><span>NEWS2</span><span>Shock Index</span><span>Must not miss</span><span>Drug-allergy checks</span><span>Examination chips</span><span>Lab range flags</span><span>Discharge summary</span><span>Dark mode</span><span>High contrast</span><span>Works offline</span><span>Student mode</span><span>Clinician mode</span><span>8 colour presets</span><span>Print A4</span></div></div>
+  </div>
+</section>
+
+<section class="sec" id="screens" aria-labelledby="screens-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="screens-h">The app as it looks today</h2>
+      <p class="lede">Real screens from v3.37.1, with a fictional patient. Tap the Theme button above to see them in light or dark.</p>
+    </div>
+    <div class="strip">
+      <figure><figure class="phone"><img class="shot-l" src="assets/img/app-home-light.webp" width="585" height="1230" loading="lazy" decoding="async" alt="The Home screen: Start new patient intake, Start from template, and a list of recent records with Draft, Complete and Discharged status."><img class="shot-d" src="assets/img/app-home-dark.webp" width="585" height="1230" loading="lazy" decoding="async" alt="The Home screen: Start new patient intake, Start from template, and a list of recent records with Draft, Complete and Discharged status." aria-hidden="true"></figure><figcaption class="shotcap">Home: start, resume or reopen a record.</figcaption></figure>
+      <figure><figure class="phone"><img class="shot-l" src="assets/img/app-ddx-light.webp" width="585" height="1230" loading="lazy" decoding="async" alt="The differentials panel for chest pain. Must not miss lists acute coronary syndrome, marked Supported, with an Add button."><img class="shot-d" src="assets/img/app-ddx-dark.webp" width="585" height="1230" loading="lazy" decoding="async" alt="The differentials panel for chest pain. Must not miss lists acute coronary syndrome, marked Supported, with an Add button." aria-hidden="true"></figure><figcaption class="shotcap">Differentials: dangerous causes first.</figcaption></figure>
+      <figure><figure class="phone"><img class="shot-l" src="assets/img/app-discharge-light.webp" width="585" height="1230" loading="lazy" decoding="async" alt="The Discharge summary screen with Print or Save as PDF, Copy text and Download .txt, and a patient banner."><img class="shot-d" src="assets/img/app-discharge-dark.webp" width="585" height="1230" loading="lazy" decoding="async" alt="The Discharge summary screen with Print or Save as PDF, Copy text and Download .txt, and a patient banner." aria-hidden="true"></figure><figcaption class="shotcap">Discharge summary, ready to print.</figcaption></figure>
+    </div>
+    <div class="cta-row" style="justify-content:center;margin-top:44px"><a class="btn btn-ghost" href="app-tour.html">See all 13 screens</a><a class="btn btn-ghost" href="differentials.html">How the differential works</a></div>
+  </div>
+</section>
+
+<section class="sec" id="audiences" aria-labelledby="aud-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="aud-h">One app for the ward round and the clinic with no internet</h2>
+      <p class="lede">The same structured intake serves two very different needs. Choose the one that sounds like you.</p>
+    </div>
+    <div class="dual">
+      <article aria-labelledby="aud-stu">
+        <span class="kicker">Students and trainees</span>
+        <h3 id="aud-stu">An active-recall companion for wards and OSCEs</h3>
+        <p class="lede">Instead of rereading a checklist, you recall and record. The app lays out every question and examination step in the order a clinician thinks, so a thorough history becomes a habit and nothing gets missed.</p>
+        <ul class="ticks">
+          <li>Tap structured finding chips to log signs in real time as you examine.</li>
+          <li>Student mode adds teaching hints and a "Before you finish" checklist.</li>
+          <li>Red-flag lists and Must-not-miss causes train you to ask the question that matters.</li>
+          <li>Supervisors can comment on any section, then approve and lock the record.</li>
+        </ul>
+        <a class="btn btn-primary" href="https://historyosis.netlify.app/" target="_blank" rel="noopener noreferrer">Launch Live App — No Sign-up Required</a>
+      </article>
+      <article aria-labelledby="aud-cli">
+        <span class="kicker">Low-resource clinics and hospitals</span>
+        <h3 id="aud-cli">Offline-ready clinical records on the devices you already have</h3>
+        <p class="lede">There is no server to set up, no licence to buy to try it, and no connection to lose. It runs on phones, tablets and budget PCs, and saves records in the browser's local storage on that device.</p>
+        <ul class="ticks">
+          <li>Works after the first load with no internet, including all medical content.</li>
+          <li>Records stay on the device. Nothing is sent to us, and there are no accounts.</li>
+          <li>Clinician mode is lean: fewer prompts, with safety alerts always shown.</li>
+          <li>Print a black-and-white A4 record, a discharge summary, or copy as text.</li>
+        </ul>
+        <p class="honest"><b>Be aware:</b> records live on one device and are not encrypted by the app. Use device encryption and a screen lock. Sharing between devices is not built yet.</p>
+        <a class="btn btn-ghost" href="https://historyosis.netlify.app/" target="_blank" rel="noopener noreferrer">Launch Live App — No Sign-up Required</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="explore" aria-labelledby="explore-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="explore-h">Find what you need</h2><p class="lede">Each part of HistoryOsis has its own page.</p></div>
+    <div class="routes">
+      <a class="route" href="features.html"><b>Features</b><span>What the app does at the bedside, from questions to sign-off.</span><em>See the features</em></a>
+      <a class="route" href="who-its-for.html"><b>Who it's for</b><span>Medical universities, small clinics and hospital wards.</span><em>Find your setting</em></a>
+      <a class="route" href="privacy-safety.html"><b>Privacy and safety</b><span>Records stay on the device. Checks are advisory and never block saving.</span><em>Read how it works</em></a>
+      <a class="route" href="roadmap.html"><b>Roadmap</b><span>What works now, what we build next, and the standards we design towards.</span><em>See the plan</em></a>
+      <a class="route" href="faq.html"><b>Questions</b><span>The questions universities and clinics ask us most.</span><em>Read the answers</em></a>
+      <a class="route" href="get-involved.html"><b>Get involved</b><span>Join the open beta or start a small pilot at your institution.</span><em>Work with us</em></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="whatsnew" aria-labelledby="new-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="new-h">What's new</h2>
+      <p class="lede">Thirty-seven updates so far, grouped into the four things you will notice. The latest is v3.37.1. All screens and examples use fictional patients.</p>
+    </div>
+    <div class="news">
+      <article aria-labelledby="n1">
+        <span>Examination</span>
+        <h3 id="n1">Enhanced physical exam coverage</h3>
+        <ul class="ticks">
+          <li>23 examination systems as grouped tap chips: cardiovascular, respiratory, abdomen, neurological, psychiatric, eye, ENT, thyroid, breast, skin, groin, obstetric, paediatric and more.</li>
+          <li>Musculoskeletal screens for GALS, hip, knee, ankle and foot, shoulder, hand and wrist, and cervical and lumbar spine.</li>
+          <li>Red-flag signs raise an alert, and "Mark all normal" never touches sensitive or special tests.</li>
+          <li>One-tap "Suggested for your complaint" exam buttons.</li>
+          <li>Numeric lab values with units and Normal, High, Low and Critical flags.</li>
+        </ul>
+      </article>
+      <article aria-labelledby="n2">
+        <span>Reasoning</span>
+        <h3 id="n2">Dynamic DDx logic</h3>
+        <ul class="ticks">
+          <li>A rule-based differential for all 76 complaints, from chest pain to fever in a child.</li>
+          <li>Must-not-miss causes kept visible in Student and Clinician mode.</li>
+          <li>Live updates as you tap, in under 15 ms on average for several complaints at once.</li>
+          <li>Student mode shows the reasoning. Clinician mode shows a compact list.</li>
+        </ul>
+      </article>
+      <article aria-labelledby="n3">
+        <span>Documentation</span>
+        <h3 id="n3">Streamlined export and discharge</h3>
+        <ul class="ticks">
+          <li>A discharge summary pre-filled from the record, with medications marked New, Changed, Continued or Stopped.</li>
+          <li>Allergy warnings on discharge medicines, and explicit "None recorded" where a field is empty.</li>
+          <li>Redesigned black-and-white A4 print that photocopies cleanly.</li>
+          <li>Print or save as PDF, copy text, or download a .txt file.</li>
+        </ul>
+      </article>
+      <article aria-labelledby="n4">
+        <span>Experience</span>
+        <h3 id="n4">Performance and accessibility</h3>
+        <ul class="ticks">
+          <li>A new home screen with Resume draft and recent records, plus bottom navigation.</li>
+          <li>Student and Clinician modes, eight colour presets, a custom colour, dark mode and High contrast.</li>
+          <li>Forced-colours support, 400% zoom without sideways scrolling, 44 px touch targets, labelled regions for screen readers.</li>
+          <li>One-tap Undo after removals, and an install prompt for offline use.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+    <div class="wrap" style="margin-top:36px"><a class="btn btn-ghost" href="whats-new.html">See every release</a></div>
+</section>
+
+<section class="sec sec-band" id="beta" aria-labelledby="beta-h">
+  <div class="wrap">
+    <div class="beta">
+      <div>
+        <h2 id="beta-h">Open beta: help us make it safer and sharper</h2>
+        <p>HistoryOsis is in open beta and gets better with every real-world edge case. We are inviting three groups to work with us.</p>
+        <ul>
+          <li><b>Clinicians</b> to test examination and differential content against real practice, and tell us what is wrong or missing.</li>
+          <li><b>Medical students</b> to use it on wards and in OSCE practice, and tell us where it slows you down.</li>
+          <li><b>Front-end developers</b> to report bugs, review accessibility and collaborate on upcoming clinical workflows.</li>
+        </ul>
+        <p>Use fictional patients while testing. Clinical content is draft until reviewed.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="https://historyosis.netlify.app/" target="_blank" rel="noopener noreferrer">Launch Live App — No Sign-up Required</a>
+        <a class="btn btn-ghost" href="mailto:founder@historyosis.tech?subject=HistoryOsis%20beta%20feedback&body=I%20am%20a%20(clinician%2C%20student%2C%20developer)%3A%0AWhat%20I%20found%20or%20want%20to%20build%3A">Report an edge case or collaborate</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="fbrand" href="index.html"><img src="assets/img/logo-192.png" width="40" height="40" alt=""><b>HistoryOsis</b></a>
+      <p>Clinical records and examination training for medical education. Offline-first. Open beta.</p>
+    </div>
+    <div>
+      <h2>The app</h2>
+      <ul>
+        <li><a href="https://historyosis.netlify.app/" target="_blank" rel="noopener noreferrer">Open the live app</a></li>
+        <li><a href="app-tour.html">App tour</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="differentials.html">Differentials</a></li>
+        <li><a href="whats-new.html">What's new</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Trust</h2>
+      <ul>
+        <li><a href="who-its-for.html">Who it's for</a></li>
+        <li><a href="privacy-safety.html">Privacy and safety</a></li>
+        <li><a href="roadmap.html">Roadmap and standards</a></li>
+        <li><a href="faq.html">Questions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Company</h2>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="get-involved.html">Get involved</a></li>
+        <li><a href="mailto:founder@historyosis.tech">founder@historyosis.tech</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>&copy; 2026 HistoryOsis Technologies. App version on this site: v3.37.1.</span>
+      <span>Screens show fictional patients. Advisory tool: clinical judgement and local protocols always apply.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/composer.js" defer></script>
+</body>
+</html>
